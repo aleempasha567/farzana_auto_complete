@@ -59,93 +59,87 @@
     </div>
   </section>
   <section>
-
     <div class="container">
       <div class="profile_divider">
         <div class="row">
-
           <div class="media col-md-2">
             <div class="row">
               <div class="col-auto mr-auto">
                 <figure class="pull-left">
-                  <img class="media-object img-rounded img-responsive imgwh-130px" src="../../assets/images/dr-f.jpg" alt="placehold.it/350x250"><br>
-
+                  <img
+                    class="media-object img-rounded img-responsive imgwh-130px"
+                    src="../../assets/images/dr-f.jpg"
+                    alt="placehold.it/350x250"
+                  /><br />
                 </figure>
               </div>
               <div class="col-auto">
-                <a href="view_profile.html" role="button" aria-pressed="true" class=" btn btn-outline-primary ">View Profile</a>
+                <a
+                  href="view_profile.html"
+                  role="button"
+                  aria-pressed="true"
+                  class=" btn btn-outline-primary "
+                  >View Profile</a
+                >
               </div>
-              </div>
-
-
-
+            </div>
           </div>
 
           <div class="col-md-10 footer-menu">
             <div class="row">
-              <div class="col-auto mr-auto"><h5>DR. FirstName Lastname</h5></div>
-              <div class="col-auto"><a href="view_profile.html" role="button" aria-pressed="true" class="btn btn-md  btn-outline-danger">Book Appointment</a></div>
+              <div class="col-auto mr-auto">
+                <h5>DR. FirstName Lastname</h5>
               </div>
+              <div class="col-auto">
+                <a
+                  href="view_profile.html"
+                  role="button"
+                  aria-pressed="true"
+                  class="btn btn-md  btn-outline-danger"
+                  >Book Appointment</a
+                >
+              </div>
+            </div>
 
-            <p>Dr. FirstName is a robotics certified Gynaecologist specializing in minimally invasive
-              gynecologic surgeries. She has been recognized for her compassion as well as her
-              commitment to quality of care</p>
+            <p>
+              Dr. FirstName is a robotics certified Gynaecologist specializing
+              in minimally invasive gynecologic surgeries. She has been
+              recognized for her compassion as well as her commitment to quality
+              of care
+            </p>
             <ul>
               <li>
-
-                Google Review<br><br>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-
+                Google Review<br /><br />
+                <rating [(ngModel)]="starsCount" [readonly]="true"> </rating>
               </li>
               <li>
-
-                Clinic Details<br>
+                Clinic Details<br />
                 <a>
-                  305 7th Avenue 10th floor<br>
+                  305 7th Avenue 10th floor<br />
                   New York, New York 10001
                 </a>
-
               </li>
               <li>
-
-                Services<br>
-                <a>
-                  Board Certified<br>
-
-                  </a></li><li class="subscriber_book"><a>Schedule Now</a></li><a>
-                </a>
-
+                Services<br />
+                <a> Board Certified<br /> </a>
+              </li>
+              <li class="subscriber_book"><a>Schedule Now</a></li>
+              <a> </a>
 
               <li>
-
-                Medcohere Review<br><br>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-
+                Medcohere Review<br /><br />
+                <rating [(ngModel)]="starsCount" [readonly]="true"></rating>
               </li>
               <li>
-
-                Contact Details<br>
+                Contact Details<br />
                 <a>
-                  305 7th Avenue 10th floor<br>
+                  305 7th Avenue 10th floor<br />
                   New York, New York 10001
                 </a>
-
               </li>
               <li>
-
-                Google API<br>
-                <a> <span>Google API to b placed </span>
-                </a>
-
-
+                Google API<br />
+                <a> <span>Google API to b placed </span> </a>
               </li>
               <!-- <li>
 
@@ -174,7 +168,6 @@
 
 
               </li> -->
-
 
               <!-- <li><a href="solution.php">Solutions</a></li>
 
@@ -196,89 +189,87 @@
       </div>
       <div class="profile_divider">
         <div class="row">
-
           <div class="media col-md-2">
             <div class="row">
               <div class="col-auto mr-auto">
                 <figure class="pull-left">
-                  <img class="media-object img-rounded img-responsive imgwh-130px" src="../../assets/images/dr-f.jpg" alt="placehold.it/350x250"><br>
-
+                  <img
+                    class="media-object img-rounded img-responsive imgwh-130px"
+                    src="../../assets/images/dr-f.jpg"
+                    alt="placehold.it/350x250"
+                  /><br />
                 </figure>
               </div>
               <div class="col-auto">
-                <a href="view_profile.html" role="button" aria-pressed="true" class=" btn btn-outline-primary ">View Profile</a>
+                <a
+                  href="view_profile.html"
+                  role="button"
+                  aria-pressed="true"
+                  class=" btn btn-outline-primary "
+                  >View Profile</a
+                >
               </div>
-              </div>
-
-
-
+            </div>
           </div>
 
           <div class="col-md-10 footer-menu">
             <div class="row">
-              <div class="col-auto mr-auto"><h5>DR. FirstName Lastname <span class="unsubscriber_book"> (Non-subscriber) </span></h5></div>
-              <div class="col-auto"><a href="view_profile.html" role="button" aria-pressed="true" class="btn btn-md btn btn-outline-danger">Book Appointment</a></div>
+              <div class="col-auto mr-auto">
+                <h5>
+                  DR. FirstName Lastname
+                  <span class="unsubscriber_book"> (Non-subscriber) </span>
+                </h5>
               </div>
+              <div class="col-auto">
+                <a
+                  href="view_profile.html"
+                  role="button"
+                  aria-pressed="true"
+                  class="btn btn-md btn btn-outline-danger"
+                  >Book Appointment</a
+                >
+              </div>
+            </div>
 
-            <p>Dr. FirstName is a robotics certified Gynaecologist specializing in minimally invasive
-              gynecologic surgeries. She has been recognized for her compassion as well as her
-              commitment to quality of care</p>
+            <p>
+              Dr. FirstName is a robotics certified Gynaecologist specializing
+              in minimally invasive gynecologic surgeries. She has been
+              recognized for her compassion as well as her commitment to quality
+              of care
+            </p>
             <ul>
               <li>
-
-                Google Review<br><br>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-
+                Google Review<br /><br />
+                <rating [(ngModel)]="starsCount" [readonly]="true"> </rating>
               </li>
               <li>
-
-                Clinic Details<br>
+                Clinic Details<br />
                 <a>
-                  305 7th Avenue 10th floor<br>
+                  305 7th Avenue 10th floor<br />
                   New York, New York 10001
                 </a>
-
               </li>
               <li>
-
-                Services<br>
-                <a>
-                  Board Certified<br>
-                  </a></li><li class="unsubscriber_book"><a>Request Appointment</a></li><a>
-
-                </a>
-
+                Services<br />
+                <a> Board Certified<br /> </a>
+              </li>
+              <li class="unsubscriber_book"><a>Request Appointment</a></li>
+              <a> </a>
 
               <li>
-
-                Medcohere Review<br><br>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star "></span>
-                <span class="fa fa-star "></span>
-
+                Medcohere Review<br /><br />
+                <rating [(ngModel)]="starsCount" [readonly]="true"> </rating>
               </li>
               <li>
-
-                Contact Details<br>
+                Contact Details<br />
                 <a>
-                  305 7th Avenue 10th floor<br>
+                  305 7th Avenue 10th floor<br />
                   New York, New York 10001
                 </a>
-
               </li>
               <li>
-
-                Google API<br>
-                <a> <span>Google API to b placed </span>
-                </a>
-
-
+                Google API<br />
+                <a> <span>Google API to b placed </span> </a>
               </li>
               <!-- <li>
 
@@ -307,7 +298,6 @@
 
 
               </li> -->
-
 
               <!-- <li><a href="solution.php">Solutions</a></li>
 
@@ -329,88 +319,84 @@
       </div>
       <div class="profile_divider">
         <div class="row">
-
           <div class="media col-md-2">
             <div class="row">
               <div class="col-auto mr-auto">
                 <figure class="pull-left">
-                  <img class="media-object img-rounded img-responsive imgwh-130px" src="../../assets/images/dr-f.jpg" alt="placehold.it/350x250"><br>
-
+                  <img
+                    class="media-object img-rounded img-responsive imgwh-130px"
+                    src="../../assets/images/dr-f.jpg"
+                    alt="placehold.it/350x250"
+                  /><br />
                 </figure>
               </div>
               <div class="col-auto">
-                <a href="view_profile.html" role="button" aria-pressed="true" class=" btn btn-outline-primary ">View Profile</a>
+                <a
+                  href="view_profile.html"
+                  role="button"
+                  aria-pressed="true"
+                  class=" btn btn-outline-primary "
+                  >View Profile</a
+                >
               </div>
-              </div>
-
-
-
+            </div>
           </div>
 
           <div class="col-md-10 footer-menu">
             <div class="row">
-              <div class="col-auto mr-auto"><h5>DR. FirstName Lastname </h5></div>
-              <div class="col-auto"><a href="view_profile.html" role="button" aria-pressed="true" class="btn btn-md btn btn-outline-danger">Book Appointment</a></div>
+              <div class="col-auto mr-auto">
+                <h5>DR. FirstName Lastname</h5>
               </div>
+              <div class="col-auto">
+                <a
+                  href="view_profile.html"
+                  role="button"
+                  aria-pressed="true"
+                  class="btn btn-md btn btn-outline-danger"
+                  >Book Appointment</a
+                >
+              </div>
+            </div>
 
-            <p>Dr. FirstName is a robotics certified Gynaecologist specializing in minimally invasive
-              gynecologic surgeries. She has been recognized for her compassion as well as her
-              commitment to quality of care</p>
+            <p>
+              Dr. FirstName is a robotics certified Gynaecologist specializing
+              in minimally invasive gynecologic surgeries. She has been
+              recognized for her compassion as well as her commitment to quality
+              of care
+            </p>
             <ul>
               <li>
-
-                Google Review<br><br>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star "></span>
-                <span class="fa fa-star"></span>
-
+                Google Review<br /><br />
+                <rating [(ngModel)]="starsCount" [readonly]="true"> </rating>
               </li>
               <li>
-
-                Clinic Details<br>
+                Clinic Details<br />
                 <a>
-                  305 7th Avenue 10th floor<br>
+                  305 7th Avenue 10th floor<br />
                   New York, New York 10001
                 </a>
-
               </li>
               <li>
-
-                Services<br>
-                <a>
-                  Board Certified<br>
-                  </a></li><li class="subscriber_book"><a>Schedule Now</a></li><a>
-                </a>
-
+                Services<br />
+                <a> Board Certified<br /> </a>
+              </li>
+              <li class="subscriber_book"><a>Schedule Now</a></li>
+              <a> </a>
 
               <li>
-
-                Medcohere Review<br><br>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-
+                Medcohere Review<br /><br />
+                <rating [(ngModel)]="starsCount" [readonly]="true"> </rating>
               </li>
               <li>
-
-                Contact Details<br>
+                Contact Details<br />
                 <a>
-                  305 7th Avenue 10th floor<br>
+                  305 7th Avenue 10th floor<br />
                   New York, New York 10001
                 </a>
-
               </li>
               <li>
-
-                Google API<br>
-                <a> <span>Google API to b placed </span>
-                </a>
-
-
+                Google API<br />
+                <a> <span>Google API to b placed </span> </a>
               </li>
               <!-- <li>
 
@@ -439,7 +425,6 @@
 
 
               </li> -->
-
 
               <!-- <li><a href="solution.php">Solutions</a></li>
 

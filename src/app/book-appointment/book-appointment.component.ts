@@ -12,6 +12,7 @@ export class BookAppointmentComponent implements OnInit {
   public historyHeading: string = 'Recently selected';
 
   public countriesTemplate = ['Albania', 'Andorra', 'Armenia', 'Austria'];
+  public starsCount = 3;
   ngOnInit() {}
   selectEvent(item) {
     // do something with selected item

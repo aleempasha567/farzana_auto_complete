@@ -1912,3 +1912,6 @@ th {
   .autocomplete-container .input-container .x {
     top: 60% !important;
   }
+  .star-icon {
+    font-size: 1em !important;
+  }
