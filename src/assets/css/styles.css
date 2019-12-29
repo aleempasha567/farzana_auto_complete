@@ -1909,3 +1909,6 @@ th {
   .autocomplete-container .suggestions-container .input-icons i {
     position: relative !important;
   }
+  .autocomplete-container .input-container .x {
+    top: 60% !important;
+  }
