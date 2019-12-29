@@ -1352,10 +1352,6 @@ padding-top: 2px;
 color: hsl(9, 40%, 60%);
 }
 
-.input-icons i {
-  position: absolute;
-}
-
 .input-icons {
   width: 100%;
   margin-bottom: 10px;
@@ -1906,4 +1902,10 @@ th {
   }
   .main {
     margin-top: 78px;
+  }
+  .autocomplete-container .input-container input {
+    height: 50px !important;
+  }
+  .autocomplete-container .suggestions-container .input-icons i {
+    position: relative !important;
   }
