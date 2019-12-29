@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+
+.container {
+  position: relative;
+  text-align: left;
+}
+
+@media (max-width: 980px) {
+  #logo,
+  #main-header,
+  .container,
+  .logo_container {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+}
+
+.container_info,
+.et_pb_row,
+.container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+article, aside, footer, header, hgroup, nav, section {
+  display: block;
+}
