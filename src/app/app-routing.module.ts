@@ -4,7 +4,7 @@ import { BookAppointmentComponent } from './book-appointment/book-appointment.co
 
 const routes: Routes = [
   {
-    path: 'book-appointment',
+    path: '',
     component: BookAppointmentComponent
   }
 ];
