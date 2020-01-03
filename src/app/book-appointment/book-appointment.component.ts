@@ -13,16 +13,6 @@ export class BookAppointmentComponent implements OnInit {
   public historyHeading: string = 'Recently selected';
 
   public countriesTemplate = [];
-  data = [
-    {
-      id: 1,
-      name: 'Usa'
-    },
-    {
-      id: 2,
-      name: 'England'
-    }
- ];
 
   public starsCount = 3;
   ngOnInit() {
