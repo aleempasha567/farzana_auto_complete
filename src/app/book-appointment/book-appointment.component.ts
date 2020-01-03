@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TypesService } from '../types.service';
 
 @Component({
   selector: 'app-book-appointment',
@@ -6,14 +7,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-appointment.component.css']
 })
 export class BookAppointmentComponent implements OnInit {
-  constructor() {}
+  constructor(private Types: TypesService) {}
   public placeholder: string = 'Doctors, Specialty , Condition , Procedure';
-  public keyword = 'name';
+  public keyword = 'title';
   public historyHeading: string = 'Recently selected';
 
-  public countriesTemplate = ['Albania', 'Andorra', 'Armenia', 'Austria'];
+  public countriesTemplate = [];
+  data = [
+    {
+      id: 1,
+      name: 'Usa'
+    },
+    {
+      id: 2,
+      name: 'England'
+    }
+ ];
+
   public starsCount = 3;
-  ngOnInit() {}
+  ngOnInit() {
+    this.Types.getData().subscribe(data => {
+      if(data) {
+        console.log(data);
+        this.countriesTemplate = data;
+      }
+    })
+  }
   selectEvent(item) {
     // do something with selected item
   }

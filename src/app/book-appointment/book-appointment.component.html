@@ -14,7 +14,7 @@
                 <ng-autocomplete
                   #ngAutoCompleteStatic
                   [data]="countriesTemplate"
-                  name="name"
+                  name="title"
                   [initialValue]=""
                   [placeHolder]="placeholder"
                   [searchKeyword]="keyword"
@@ -28,7 +28,7 @@
                 </ng-autocomplete>
 
                 <ng-template #itemTemplateStatic let-item>
-                  <a [innerHTML]="item"></a>
+                  <a [innerHTML]="item.title"></a>
                 </ng-template>
 
                 <ng-template #notFoundTemplate let-notFound>
