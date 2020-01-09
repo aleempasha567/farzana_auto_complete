@@ -1,0 +1,341 @@
+<div class="main">
+  <section class="mail-sec  ">
+    <div class="container">
+      <h2 class="main-title white-title padding-top-five">
+        Find doctors near your location
+      </h2>
+
+      <form action="#" method="post">
+        <div class="col-lg-12 ">
+          <div class="row ">
+            <div class="col-lg-1 col-md-1 col-sm-12"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12 p-0 input-icons">
+              <div class="ng-autocomplete">
+                <ng-autocomplete
+                  #ngAutoCompleteStatic
+                  [data]="countriesTemplate"
+                  name="title"
+                  [initialValue]=""
+                  [placeHolder]="placeholder"
+                  [searchKeyword]="keyword"
+                  historyIdentifier="countriesTemplateList"
+                  [historyHeading]="historyHeading"
+                  historyListMaxNumber="3"
+                  notFoundText="Not found"
+                  [itemTemplate]="itemTemplateStatic"
+                  [notFoundTemplate]="notFoundTemplate"
+                >
+                </ng-autocomplete>
+
+                <ng-template #itemTemplateStatic let-item>
+                  <a [innerHTML]="item.title"></a>
+                </ng-template>
+
+                <ng-template #notFoundTemplate let-notFound>
+                  <div [innerHTML]="notFound"></div>
+                </ng-template>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-12 p-0 input-icons">
+              <input
+                type="text"
+                class="form-control search-slt input-field"
+                placeholder="Zip code or City"
+              />
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+              <a
+                href="book_appointment.html"
+                role="button"
+                aria-pressed="true"
+                class="btn btn-danger wrn-btn bookbtn"
+                >Search</a
+              >
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section>
+
+    <div class="container" style="padding-top: 10px;background: #fff;">
+
+      <div class="profile_divider">
+        <div class="row">
+
+          <div class="media col-md-2">
+            <div class="row">
+              <div class="col-auto mr-auto">
+                <figure class="pull-left">
+                  <img class="media-object img-rounded img-responsive imgwh-130px" src="../../assets/images/dr-f.jpg" alt="placehold.it/350x250"><br>
+                </figure>
+              </div>
+              <div class="col-auto">
+                <div class="doctorsprofile_name">
+                  <button type="button" class="btn btn-primary bookbtn">View Phone</button>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+          <div class="col-md-6 footer-menu">
+            <div class="row">
+              <div class="col-auto mr-auto "><span class="doctorsprofile_name">
+                  <h4> DR. FirstName Lastname</h4>
+                </span><span class="unsubscriber_book"> (Non-subscriber) </span><br>
+                <h6>Gynaecologist</h6>
+              </div>
+              <!-- <div class="col-auto"><a href="schedule_appointment.html" role="button" aria-pressed="true" class="btn btn-md btn btn-outline-danger">Book Appointment</a></div> -->
+            </div>
+
+            <div class="alert alert-primary" role="alert">
+
+              <h4>Procedures Offered :</h4>
+              <span>Dr FirstName is not shared procedres offered information with Medcohere.</span>
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              <!-- <div class="doctorsprofile_list"> -->
+              <!-- <h5><img src="./images/doctorsprofile_list_img1.png"
+                  alt="Education Qualifications"><span style="display:inline-block">
+                  <h5>Education Qualifications</h5>
+                </span></h5> -->
+              <h5>Education : </h5>
+              <span>Dr FirstName is not shared education information with Medcohere.</span>
+              <!-- </div> -->
+            </div>
+            <div class="alert alert-success" role="alert">
+              <!-- <h5><img src="./images/doctorsprofile_list_img1.png" alt="Honors / Awards"><span
+                  style="display:inline-block">
+                  <h5>Honors / Awards</h5>
+                </span></h5> -->
+              <h5>Honors/Awards :</h5>
+              <span>Dr FirstName is not shared Honors/Awards information with Medcohere .</span>
+            </div>
+            <div class="alert alert-danger" role="alert">
+              <!-- <h5><img src="./images/doctorsprofile_list_img1.png"
+                  alt="Assocciate Affiliations"><span style="display:inline-block">
+                  <h5>Assocciate Affiliations</h5>
+                </span></h5> -->
+              <h5>Associate Affiliations :</h5>
+              <span>Dr FirstName is not shared Assocciate Affiliations information with Medcohere.</span>
+            </div>
+            <!-- <div class="alert alert-warning" role="alert">
+              <h5><img src="./images/doctorsprofile_list_img1.png"
+                  alt="Education Qualifications"><span style="display:inline-block">
+                  <h5>Honors / Awards</h5>
+                </span></h5>
+              <ul>
+                <li>MD, DM (Cardiology), Fellow ICPS</li>
+              </ul>
+            </div> -->
+            <div class="alert alert-info" role="alert">
+              <!-- <h5><img src="./images/doctorsprofile_list_img1.png"
+                  alt="Education Qualifications"><span style="display:inline-block">
+                  <h5>Board Certificates</h5>
+                </span></h5>
+              <ul>
+                <li>MD, DM (Cardiology), Fellow ICPS</li>
+              </ul> -->
+              <h5>Board Certificates :</h5>
+              <span>Dr FirstName is not shared Board Certificates information with Medcohere.</span>
+            </div>
+            <div class="alert alert-light" role="alert">
+              <!-- <h5><img src="./images/doctorsprofile_list_img1.png"
+                  alt="Education Qualifications"><span style="display:inline-block">
+                  <h5>Recidency</h5>
+                </span></h5>
+              <ul>
+                <li>MD, DM (Cardiology), Fellow ICPS</li>
+              </ul> -->
+              <h5>Residency :</h5>
+              <span>Dr FirstName is not shared Residency information with Medcohere.</span>
+            </div>
+            <div class="alert alert-dark" role="alert">
+              <!-- <h5><img src="./images/doctorsprofile_list_img1.png"
+                  alt="Education Qualifications"><span style="display:inline-block">
+                  <h5>Clnical Intrest</h5>
+                </span></h5>
+              <ul>
+                <li>MD, DM (Cardiology), Fellow ICPS</li>
+              </ul> -->
+              <h5>Clinical Interest :</h5>
+              <span>Dr FirstName is not shared clinical Interest information with Medcohere.</span>
+            </div>
+            <div class="alert alert-warning" role="alert">
+              <!-- <h5><img src="./images/doctorsprofile_list_img1.png"
+                  alt="Education Qualifications"><span style="display:inline-block">
+                  <h5>Marketing Material (videos / Documents)</h5>
+                </span></h5>
+              <ul>
+                <li>MD, DM (Cardiology), Fellow ICPS</li>
+              </ul> -->
+              <h5>Marketing Material (Videos / Documents) :</h5>
+              <span>Dr FirstName is not shared Marketing Material information with Medcohere.</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="alert alert-info" role="alert" style="text-align: center;">
+                <span style="font-size:20px">Please call to confirm office hours</span>
+                <table>
+                  <tr>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                    <th>SUN</th>
+                  </tr>
+                  <tr>
+                    <td>9am to 10pm</td>
+                    <td>9am to 10pm</td>
+                    <td>9am to 10pm</td>
+                    <td>9am to 10pm</td>
+                    <td>9am to 10pm</td>
+                    <td>9am to 10pm</td>
+                    <td>9am to 10pm</td>
+                  </tr>
+
+                </table>
+
+              </div>
+            </div>
+            <h4 style="text-align:center;margin-bottom:-8px!important;color:#04369a!important">Book Appointment</h4>
+            <div class="row " id="target">
+
+              <div class="calendar" id="calendar-app">
+                <div class="calendar--day-view" id="day-view">
+                  <span class="day-view-exit" id="day-view-exit">&times;</span>
+                  <span class="day-view-date" id="day-view-date">MAY 29 2016</span>
+                  <div class="day-view-content">
+                    <div class="row padding_calenderslot ">
+                      <div class="col-md-12">
+                        <div class="col-md-6">
+                          <button class="avail_btn"></button> Available Slots
+                        </div>
+                        <div class="col-md-6">
+                          <button class="blocked_btn"></button> Unavailable Slots
+                        </div>
+                      </div><br>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="half1">
+                            <span onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0"
+                              id="add-event-save" class="event-btn--save event-btn green_clr" data-toggle="modal"
+                              data-target="#formModal">10:00 AM</span>
+                            <span tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn red_clr">10:30
+                              AM</span>
+                            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
+                              class="event-btn--save event-btn">11:00 AM</a>
+                            <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">11:30 PM</a>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="half1">
+                            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
+                              class="event-btn--save event-btn green_clr" data-toggle="modal"
+                              data-target="#formModal">1:30 PM</a>
+                            <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">02:00 PM</a>
+                            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
+                              class="event-btn--save event-btn green_clr" data-toggle="modal"
+                              data-target="#formModal">02:30 PM</a>
+                            <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">03:00 PM</a>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="half1">
+                            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
+                              class="event-btn--save event-btn green_clr" data-toggle="modal"
+                              data-target="#formModal">04:30 PM</a>
+                            <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">05:00 PM</a>
+                            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
+                              class="event-btn--save event-btn green_clr" data-toggle="modal"
+                              data-target="#formModal">06:00 PM</a>
+                            <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">06:30 PM</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- <div class="day-highlight">
+                    You <span class="day-events" id="day-events">had no events for today</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Add a new event?</span>
+                  </div> -->
+                    <div class="day-add-event" id="add-day-event-box" data-active="false">
+                      <div class="row">
+                        <div class="half">
+                          <label class="add-event-label">
+                            Name of event
+                            <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event"
+                              id="input-add-event-name">
+
+                          </label>
+                        </div>
+                        <div class="qtr">
+                          <label class="add-event-label">
+                            Start Time
+                            <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time"
+                              data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                            <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm"
+                              data-options="a,p,am,pm">
+                          </label>
+                        </div>
+                        <div class="qtr">
+                          <label class="add-event-label">
+                            End Time
+                            <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time"
+                              data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                            <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm"
+                              data-options="a,p,am,pm">
+                          </label>
+                        </div>
+                        <div class="half">
+                          <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
+                            class="event-btn--save event-btn">save</a>
+                          <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">cancel</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div id="day-events-list" class="day-events-list">
+
+                    </div>
+                    <div class="day-inspiration-quote" id="inspirational-quote">
+                      <!-- Every child is an artist.  The problem is how to remain an artist once he grows up. –Pablo Picasso -->
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar--view" id="calendar-view">
+                  <div class="cview__month">
+                    <span class="cview__month-last" id="calendar-month-last">Apr</span>
+                    <span class="cview__month-current" id="calendar-month">May</span>
+                    <span class="cview__month-next" id="calendar-month-next">Jun</span>
+                  </div>
+                  <div class="cview__header">Sun</div>
+                  <div class="cview__header">Mon</div>
+                  <div class="cview__header">Tue</div>
+                  <div class="cview__header">Wed</div>
+                  <div class="cview__header">Thu</div>
+                  <div class="cview__header">Fri</div>
+                  <div class="cview__header">Sat</div>
+                  <div class="calendar--view" id="dates">
+                  </div>
+                </div>
+                <div class="footer">
+                  <span><span id="footer-date" class="footer__link">Have a Nice Day</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<button>Click Me</button>
+</div>

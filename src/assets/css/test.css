@@ -33,3 +33,29 @@
 article, aside, footer, header, hgroup, nav, section {
   display: block;
 }
+.doctorsprofile_title{width:100%;padding:75px 0 40px 0 !important;background-color:#f5f5f5 !important;background-size:contain;}
+.doctorsprofile_title h4{margin:0;padding:0;color:#fff;font-size:33px;text-transform:uppercase;font-family:'Lato-Bold';position:relative;}
+.doctorsprofile_title h4:after{position:absolute;bottom:-5px;left:0;width:60px;height:1px;content:"";background:#fff;}
+.doctorsprofile_info{width:100%;padding:50px 0;}
+.doctorsprofile_info:after{clear:both;display:block;content:"";}
+.doctorsprofile_info .doctorsprofile_left{float:left;background-color:rgb(240, 240, 240);width:320px;padding:20px;}
+.doctorsprofile_img{width:100%;margin:0 0 10px 0;}
+.doctorsprofile_img img{border:1px solid #c8d0d9;}
+.doctorsprofile_name{width:100%;}
+.doctorsprofile_name h1{margin:0;padding:0;font-size:22px;color:#f58634;text-transform:uppercase;font-family:'Lato-Bold';}
+.doctorsprofile_name h4{margin:0;padding:0;font-size:18px;color:#003398;text-transform:uppercase;font-family:'Lato-Bold';}
+.doctorsprofile_name p{margin:0 0 25px 0;padding:0;font-size:15px;color:#626262;font-family:'Lato-Regular';}
+.doctorsprofile_name p img{display:inline-block;vertical-align:middle;margin:0 5px 0 0;}
+.doctorsprofile_name p span{color:#111111;display:inline-block;vertical-align:middle;}
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 10px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1em;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}

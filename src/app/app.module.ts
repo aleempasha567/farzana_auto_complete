@@ -11,13 +11,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookAppointmentComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ViewProfileComponent
   ],
   imports: [
     FormsModule,
