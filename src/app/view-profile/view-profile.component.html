@@ -228,36 +228,31 @@
                         <div class="col-md-4">
                           <div class="half1">
                             <span onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0"
-                              id="add-event-save" class="event-btn--save event-btn green_clr" data-toggle="modal"
-                              data-target="#formModal">10:00 AM</span>
+                              id="add-event-save" class="event-btn--save event-btn green_clr" (click)="open(formModal)">10:00 AM</span>
                             <span tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn red_clr">10:30
                               AM</span>
                             <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
-                              class="event-btn--save event-btn">11:00 AM</a>
+                              class="event-btn--save event-btn" (click)="open(formModal)">11:00 AM</a>
                             <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">11:30 PM</a>
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="half1">
                             <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
-                              class="event-btn--save event-btn green_clr" data-toggle="modal"
-                              data-target="#formModal">1:30 PM</a>
+                              class="event-btn--save event-btn green_clr" (click)="open(formModal)">1:30 PM</a>
                             <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">02:00 PM</a>
                             <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
-                              class="event-btn--save event-btn green_clr" data-toggle="modal"
-                              data-target="#formModal">02:30 PM</a>
+                              class="event-btn--save event-btn green_clr" (click)="open(formModal)">02:30 PM</a>
                             <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">03:00 PM</a>
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="half1">
                             <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
-                              class="event-btn--save event-btn green_clr" data-toggle="modal"
-                              data-target="#formModal">04:30 PM</a>
+                              class="event-btn--save event-btn green_clr" (click)="open(formModal)">04:30 PM</a>
                             <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">05:00 PM</a>
                             <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save"
-                              class="event-btn--save event-btn green_clr" data-toggle="modal"
-                              data-target="#formModal">06:00 PM</a>
+                              class="event-btn--save event-btn green_clr" (click)="open(formModal)">06:00 PM</a>
                             <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">06:30 PM</a>
                           </div>
                         </div>
@@ -337,5 +332,98 @@
       </div>
     </div>
   </section>
-<button>Click Me</button>
+<!-- Modal -->
+<ng-template #formModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title" id="formModalLabel">Enter Patient Details</h5>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
 </div>
+<div class="modal-body">
+
+    <div class="container">
+        <form>
+            <h4 class="viewprofiledoctor_cnt">DR.FirstName Last Name (<span>For Timeslot : HH:MM to
+      HH:MM</span>)</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Select Insurance Company</label>
+                        <select class="form-control">
+                            <option>Insurance-1</option>
+                            <option>Insurance-2</option>
+                            <option>Insurance-3</option>
+                            <option>Insurance-4</option>
+                        </select>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Insurance Id</label>
+                        <input type="text" class="form-control" placeholder="" id="last">
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="email">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="phone">
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+
+            </div>
+            <!--  col-md-6   -->
+
+            <!--  row   -->
+
+            <label>Are You New To Hospital?</label>
+            <p>
+                <input type="radio" id="test2" name="radio-group">
+                <label for="test2">Yes</label>
+            </p>
+            <p>
+                <input type="radio" id="test3" name="radio-group">
+                <label for="test3">NO</label>
+            </p>
+
+            <label> Please Submit the form and we will send a OTP to the registered mobile number.
+            </label>
+
+            <button class="btn btn-warning " style="    margin-top: -15px;">Send OTP</button>
+            <br>
+            <label>Your Message :</label>
+            <br>
+            <textarea class="form-control" rows="3"></textarea>
+
+            <p>
+
+                <label><span style="font-size:30px">*</span>
+                    <input type="checkbox"> I acknowledge that I have read and agree to the Medcohere
+                    <a href="#">Terms of use</a>
+                </label>
+            </p>
+        </form>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+    <button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Book Now</button>
+</div>
+</ng-template>

@@ -5,13 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {RatingModule} from "ngx-rating";
-import {AutocompleteLibModule} from 'angular-ng-autocomplete';
+import { RatingModule } from "ngx-rating";
+import { AutocompleteLibModule } from 'angular-ng-autocomplete';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ViewProfileComponent } from './view-profile/view-profile.component';
     FontAwesomeModule,
     AutocompleteLibModule,
     RatingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
